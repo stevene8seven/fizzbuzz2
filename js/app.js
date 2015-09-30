@@ -1,25 +1,18 @@
-/*The program should print out each number  
-from 1 to 100, replacing numbers 
-divisible by both 3 and 5 with “fizz buzz”,
-those divisible by 3 with “fizz”, and 
-those divisible by 5 with “buzz”.
-
-$('#add').click(function(event) {
-		if( $('#input_text').val().trim().length == 0 ) {
-				// alert("missing");
-				$('#error').show();
-				$('#input_text').val("");
-		} else { 
-
-		$('.items').append('<li class="item"><button class="remove">Mark Complete</button>' + $('#input_text').val() + '</li>');
-		$('#input_text').val("");
-		$('#error').hide();
-
-		};	
-		event.preventDefault();
-	});
-
+/*
 */
+
+$(document).ready(function(event){
+	
+	var input = parseInt(prompt("Enter a value"));
+
+	if(isNan(input)){
+		alert("bad input");
+	}
+	else{
+		document.write(input);
+	}
+
+});
 
 
 
